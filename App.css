@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+#rect1{
+  width: 100px;
+  height: 100px;
+  background-color: orange; 
+  transition: background-color 3s, border-radius 2s, transform 2s ;
+  border-color: black;
+  border-width: 2px;
+  border-style: dotted;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite
+}
+#rect1:hover{
+  background-color: greenyellow;
+  border-radius: 23px;
+  transform: scale(2)
+}
+@keyframes fadein {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: greenyellow;
+  }
+}
+
+#rect2{
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+}
